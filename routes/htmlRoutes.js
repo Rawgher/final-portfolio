@@ -9,7 +9,7 @@ module.exports = function (app) {
     });
   });
 
-  // Load example page and pass in an example by id
+  // Load the about me page
   app.get("/AboutMe", function (req, res) {
       res.render("about", {
         title: "About Me",
@@ -17,22 +17,23 @@ module.exports = function (app) {
       });
     });
 
-  // Load example page and pass in an example by id
+  // Load the portfolio page
   app.get("/Portfolio", function (req, res) {
-      res.render("example", {
+      res.render("portfolio", {
         title: "Portfolio",
         msg: "My Portfolio"
       });
     });
 
-  // Load example page and pass in an example by id
+  // Load the contact page
   app.get("/Contact", function (req, res) {
-      res.render("example", {
+      res.render("contact", {
         title: "Contact Me",
-        msg: "Contact Me",
+        msg: "Contact Me"
       });
     });
   
+  // Post contact requests to the database
   app.post("/Contact", function (req, res) {
     db.Contact.create({
       name: req.body.name,

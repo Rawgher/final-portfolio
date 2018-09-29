@@ -8,14 +8,10 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   {{!-- Import materialize.css --}}
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
   {{!-- Importing my own stylesheet --}}
   <link rel="stylesheet" href="/styles/styles.css" media="screen" title="no title" charset="utf-8">
-
-  {{!-- Importing jQuery --}}
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -23,7 +19,34 @@
 </head>
 
 <body>
-  {{{body}}}
+  <div class="container">
+    <div class="row center">
+      <a href="/"><i class="material-icons medium">home</i></a>
+      <a href="/AboutMe"><i class="material-icons medium">person</i></a>
+      <a href="/Portfolio"><i class="material-icons medium">folder</i></a>
+      <a href="/Contact"><i class="material-icons medium">email</i></a>
+    </div>
+
+    <div class="row center">
+      {{{body}}}
+    </div>
+
+    <div class="row center">
+      <footer>
+        <div class="container">
+          Github icon here | LinkedIn icon here
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  {{!-- Importing jQuery --}}
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    
+  <script type="text/javascript" src="/js/materialize.js"></script>
+
 </body>
 
 </html>
