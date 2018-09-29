@@ -14,6 +14,13 @@ module.exports = function (sequelize, DataTypes) {
         len: [1]
       }
     },
+    subject: {
+      type: DataTypes.TEXT,
+      allowNull: false,
+      validate: {
+        len: [1]
+      }
+    },
     question: {
       type: DataTypes.TEXT,
       allowNull: false,
