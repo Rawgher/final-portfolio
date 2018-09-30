@@ -2,18 +2,13 @@
   height: 45px;
 }
 
-.flexBox {
-  display: flex;
-  flex-direction: row;
-  align-content: space-around;
+.imgFit {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-.flexItem {
-  flex-grow: 1;
-  flex-basis: content
-}
-
-.overlay {
+.holder .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -38,11 +33,7 @@
   text-align: center;
 }
 
-.flexItem:hover .overlay {
+.holder:hover .overlay {
   opacity: 0.6;
   cursor: pointer
-}
-
-.imgSizing {
-  width: 30%;
 }
