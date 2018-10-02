@@ -20,22 +20,22 @@
 
 <body>
   <div class="container">
-    <div class="row center">
-      <a href="/"><i class="material-icons medium">home</i></a>
-      <a href="/AboutMe"><i class="material-icons medium">person</i></a>
-      <a href="/Portfolio"><i class="material-icons medium">folder</i></a>
-      <a href="/Contact"><i class="material-icons medium">email</i></a>
+    <div class="row center padTop">
+      <a href="/"><i class="material-icons medium tooltipped" data-position="top" data-tooltip="Home">home</i></a>
+      <a href="/AboutMe"><i class="material-icons medium tooltipped separate" data-position="top" data-tooltip="About Me">person</i></a>
+      <a href="/Portfolio"><i class="material-icons medium tooltipped separate" data-position="top" data-tooltip="Work">folder</i></a>
+      <a href="/Contact"><i class="material-icons medium tooltipped separate" data-position="top" data-tooltip="Contact">email</i></a>
     </div>
 
-      {{{body}}}
+    {{{body}}}
 
     <div class="row center">
       <footer>
-          <a href="https://github.com/Rawgher" target="_blank" title="GitHub">
-          <img src="/images/github-logo.svg" class="logoResize"></a> | 
-          <a href="https://www.linkedin.com/in/roger-pender-2b564bb4"target="_blank" title="LinkedIn">
+        <a href="https://github.com/Rawgher" target="_blank" title="GitHub">
+          <img src="/images/github-logo.svg" class="logoResize"></a> |
+        <a href="https://www.linkedin.com/in/roger-pender-2b564bb4" target="_blank" title="LinkedIn">
           <img src="/images/linkedin-logo.svg" class="logoResize"></a>
-          {{!-- thank you Dave Gandy and SimpleIcon @ flaticon.com for these images --}}
+        {{!-- thank you Dave Gandy and SimpleIcon @ flaticon.com for these images --}}
       </footer>
     </div>
   </div>
@@ -46,6 +46,12 @@
     crossorigin="anonymous"></script>
 
   <script type="text/javascript" src="/js/materialize.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.tooltipped').tooltip();
+    });
+  </script>
 
 </body>
 

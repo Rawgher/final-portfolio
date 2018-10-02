@@ -1,16 +1,32 @@
+.padTop {
+  padding-top: 40px;
+}
+
+.separate {
+  margin-left: 0.5em;
+}
+
 .logoResize {
   height: 45px;
+}
+
+.leftPad {
+  padding-left: 1.25em;
 }
 
 .imgFit {
   display: block;
   width: 100%;
-  height: auto;
+  height: 170px;
 }
 
 .holder {
   position: relative;
-  width: 100%
+  width: 100%;
+}
+
+.row > .portDiv {
+  padding: 1.25em 0 0 1.25em;
 }
 
 .overlay {
