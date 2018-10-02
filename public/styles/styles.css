@@ -1,3 +1,10 @@
+body {
+  background-color: lightcoral;
+}
+
+.mainContent {
+  background-color: white;
+}
 .padTop {
   padding-top: 40px;
 }
@@ -25,7 +32,7 @@
   width: 100%;
 }
 
-.row > .portDiv {
+.row > a > .portDiv {
   padding: 1.25em 0 0 1.25em;
 }
 
