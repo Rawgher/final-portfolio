@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- {{!-- Importing my own stylesheet --}} -->
+    <link rel="stylesheet" href="/styles/reset.css" media="screen" title="no title" charset="utf-8">
+
+    <!-- {{!-- Import Google Icon Font --}} -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- {{!-- Import materialize.css --}} -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- {{!-- Importing my own stylesheet --}} -->
+    <link rel="stylesheet" href="/styles/styles.css" media="screen" title="no title" charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Roger Pender</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row center padTop">
+            <a href="/"><i class="material-icons medium tooltipped" data-position="top" data-tooltip="Home">home</i></a>
+            <a href="/AboutMe"><i class="material-icons medium tooltipped separate" data-position="top" data-tooltip="About Me">person</i></a>
+            <a href="/Portfolio"><i class="material-icons medium tooltipped separate" data-position="top" data-tooltip="Work">folder</i></a>
+            <a href="/Contact"><i class="material-icons medium tooltipped separate" data-position="top" data-tooltip="Contact">email</i></a>
+        </div>
+
+
+        <div class="mainContent">
+
+            <div id="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="">
+                            <h3>{{msg}}</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" id="aboutMe">
+                <h3>{{msg}}</h3>
+            </div>
+            <div class="row">
+                <div class="col s12 m10 l4">
+                    <img src="/images/RogerPender.jpg" alt="This is a picture of me" title="This is a picture of Roger Pender"
+                        id="myPhoto">
+                </div>
+                <div class="col s12 m14 l8">
+                    <p>
+                        Hi, I'm Roger. I graduated from UC Davis in 2014 with a Bachelor's Degree in Animal Biology.
+                        I'm
+                        currently located in Northern
+                        California, but I spent the majority of my life down in Los Angeles.
+                    </p>
+                    <p>
+                        I'm a nerdy kid who enjoys comics, spending a lot of time on Netflix and browsing Reddit. I
+                        spend
+                        too much time bothering
+                        and taking pictures of my two cats. I've worked with different species of animals during all
+                        sorts
+                        of
+                        jobs, and had always thought I would keep working with them, until I discovered coding.
+                    </p>
+                    <p>
+                        I really love building stuff from scratch and am looking forward to seeing all the different
+                        ways I
+                        can do that. Please check
+                        out my portfolio below if you have some time. I will be updating it with my boot camp projects,
+                        and
+                        any
+                        side projects I have been working on. Please contact me if there are any projects I can help
+                        you
+                        with.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="row leftPad" id="portfolio">
+                <h3>{{msg}}</h3>
+
+                <div>
+                    <p>Here are some of the projects that I have been working on. If you hover over an image, it will
+                        have the
+                        title of the project. Each image will also take you to the deployed website or github repo
+                        linked to it.</p>
+                </div>
+
+            </div>
+
+            <div class="row center">
+
+                <a href="https://eneaantonicelli.github.io/Project1/index.html" target="_blank">
+                    <div class="portDiv col sm12 m6 l4">
+                        <div class="holder">
+                            <img class="imgFit" src="/images/one_code.PNG">
+                            <div class="overlay">
+                                <div class="appName">One Stop Code Shop</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://rawgher.github.io/RPG-Game/" target="_blank">
+                    <div class="portDiv col sm12 m6 l4">
+                        <div class="holder">
+                            <img class="imgFit" src="/images/overwatch_RPG.PNG">
+                            <div class="overlay">
+                                <div class="appName">Overwatch RPG Game</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://rawgher.github.io/giphy-api/" target="_blank">
+                    <div class="portDiv col sm12 m6 l4">
+                        <div class="holder">
+                            <img class="imgFit" src="/images/giphy_API.PNG">
+                            <div class="overlay">
+                                <div class="appName">Giphy Generator</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://rawgher.github.io/trivia-game/" target="_blank">
+                    <div class="portDiv col sm12 m6 l4">
+                        <div class="holder">
+                            <img class="imgFit" src="/images/trivia.PNG">
+                            <div class="overlay">
+                                <div class="appName">Parks and Rec Trivia Game</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://rawgher.github.io/Word-Guess-Game/" target="_blank">
+                    <div class="portDiv col sm12 m6 l4">
+                        <div class="holder">
+                            <img class="imgFit" src="/images/hangman.PNG">
+                            <div class="overlay">
+                                <div class="appName">Battle Royale Hangman</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://rawgher.github.io/Train-Scheduler/" target="_blank">
+                    <div class="portDiv col sm12 m6 l4">
+                        <div class="holder">
+                            <img class="imgFit" src="/images/train-schedule.PNG">
+                            <div class="overlay">
+                                <div class="appName">Train Scheduler</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://github.com/Rawgher/liri-node-app" target="_blank">
+                    <div class="portDiv col sm12 m6 l4">
+                        <div class="holder">
+                            <img class="imgFit" src="/images/coming-soon.PNG">
+                            <div class="overlay">
+                                <div class="appName">Liri Node App</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://github.com/Rawgher/constructor-word-guess" target="_blank">
+                    <div class="portDiv col sm12 m6 l4">
+                        <div class="holder">
+                            <img class="imgFit" src="/images/coming-soon.PNG">
+                            <div class="overlay">
+                                <div class="appName">Constructor Word Game</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+
+            <div class="row" id="contactMe">
+                <h3>{{msg}}</h3>
+                <div class="row">
+                    <form class="col s12" action="/" method="post">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="name" type="text" class="validate" name="name">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="email" type="text" class="validate" name="email">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="subject" type="text" class="validate" name="subject">
+                                <label for="subject">Subject</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="textInput" class="materialize-textarea" name="textInput"></textarea>
+                                <label for="textInput">Textarea</label>
+                            </div>
+                            <div class="row">
+                                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                                    <i class="material-icons right">send</i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="row center">
+            <footer>
+                <a href="https://github.com/Rawgher" target="_blank" title="GitHub">
+                    <img src="/images/github-logo.svg" class="logoResize"></a> |
+                <a href="https://www.linkedin.com/in/roger-pender-2b564bb4" target="_blank" title="LinkedIn">
+                    <img src="/images/linkedin-logo.svg" class="logoResize"></a>
+                <!-- thank you Dave Gandy and SimpleIcon @ flaticon.com for these images -->
+            </footer>
+        </div>
+    </div>
+
+
+    <!-- {{!-- Importing jQuery --}} -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="/js/materialize.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.tooltipped').tooltip();
+        });
+    </script>
+
+</body>
+
+</html>
