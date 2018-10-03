@@ -20,6 +20,6 @@ module.exports = function (app) {
     });
 
   app.get("*", function (req, res) {
-    res.render("404");
+    res.sendFile(path.join(__dirname, "../public/404.html"));
   });
 };
