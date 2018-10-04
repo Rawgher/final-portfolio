@@ -1,10 +1,20 @@
-/* body {
-  background-color: gray;
-} */
+body {
+  /* background-color: gray; */
+  font-family: 'Roboto', sans-serif;
+} 
+
+.hidden {
+  display: none;
+}
+
+.tooltipped:hover {
+  cursor: pointer;
+}
 
 .mainContent {
   background-color: white;
 }
+
 .padTop {
   padding-top: 40px;
 }
@@ -19,6 +29,14 @@
 
 .leftPad {
   padding-left: 1.25em;
+}
+
+.textStyle {
+  line-height: 1.5;
+}
+
+.textMarTop {
+  margin-top: -2px;
 }
 
 .imgFit {
