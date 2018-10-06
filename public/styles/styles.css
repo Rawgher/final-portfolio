@@ -6,6 +6,11 @@ body {
 .logo {
   color: white;
   /* color: #e5efee; */
+  opacity: 0.4;
+}
+
+#homeButton {
+  opacity: 1.0;
 }
 
 .hidden {
