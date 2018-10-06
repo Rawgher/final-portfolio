@@ -1,5 +1,5 @@
 body {
-  /* background-color: gray; */
+  background-color: #1e3d5a;
   font-family: 'Roboto', sans-serif;
 } 
 
@@ -12,8 +12,18 @@ body {
 }
 
 .mainContent {
-  background-color: white;
-  padding-top: 20px;
+  background-color: #e5efee;
+  border-radius: 1em;
+  margin: 1.5em;
+  padding-right: 1.25em;
+  padding-left: 1.25em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  font-size: 18px;
+}
+
+.marTop {
+  margin-top: 20px;
 }
 
 .padTop {
@@ -28,16 +38,16 @@ body {
   height: 45px;
 }
 
-.leftPad {
-  padding-left: 1.25em;
-}
-
 .textStyle {
   line-height: 1.5;
 }
 
 .textMarTop {
   margin-top: -2px;
+}
+
+#photoDiv {
+  margin-top: 2em;
 }
 
 .imgFit {
@@ -52,35 +62,33 @@ body {
 }
 
 .row > a > .portDiv {
-  padding: 1.25em 0 0 1.25em;
+  padding-top: 1.25em;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: black;
+.appInfo {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
 }
 
 .appName {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+font-size: 16px;
 }
 
-.holder:hover .overlay {
-  opacity: 0.6;
-  cursor: pointer
+.linkDiv {
+  margin-top: 0.5em;
+  font-size: 12px;
+}
+
+.aPort {
+  text-decoration: none;
+  color: black;
+}
+
+.noLeftPad {
+  padding-left: 0px !important;
+  margin-top: 1em;
+}
+
+.footerSeparate {
+  margin-left: 2em;
 }
