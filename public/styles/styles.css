@@ -3,6 +3,11 @@ body {
   font-family: 'Roboto', sans-serif;
 } 
 
+.logo {
+  color: white;
+  /* color: #e5efee; */
+}
+
 .hidden {
   display: none;
 }
@@ -36,6 +41,7 @@ body {
 
 .logoResize {
   height: 45px;
+  filter: invert(1);
 }
 
 .textStyle {
