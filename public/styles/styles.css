@@ -14,7 +14,6 @@ body {
 .mainContent {
   background-color: #e5efee;
   border-radius: 1em;
-  margin: 1.5em;
   padding-right: 1.25em;
   padding-left: 1.25em;
   padding-top: 1.5em;
@@ -26,8 +25,9 @@ body {
   margin-top: 20px;
 }
 
-.padTop {
-  padding-top: 40px;
+.navBar {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .separate {
@@ -89,6 +89,10 @@ font-size: 16px;
   margin-top: 1em;
 }
 
-.footerSeparate {
+.footerLogoSeparate {
   margin-left: 2em;
+}
+
+.footerSpacing {
+  padding-top: 60px;
 }

@@ -15,7 +15,6 @@ module.exports = function (app) {
         subject: req.body.subject,
         question: req.body.textInput
       }).then(function () {
-        res.sendFile(path.join(__dirname, "../public/index.html"));
       });
     });
 
