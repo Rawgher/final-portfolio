@@ -1,7 +1,9 @@
 $(document).ready(function () {
 
+    // initializes popups above navbar icons
     $('.tooltipped').tooltip();
 
+    // functions used to display chosen div and hide all others. also handles easing
     $("#homeButton").on("click", function() {
         $("#portfolio").fadeOut(1).addClass("hidden");
         $("#contactMe").fadeOut(1).addClass("hidden");
@@ -28,8 +30,5 @@ $(document).ready(function () {
         $("#contactButton").css("opacity", "1.0");
         $("#contactMe").fadeIn("slow").removeClass("hidden");
     })
-
-    // $('.modal').modal();
-    // $('.modal').open()
 
 });
