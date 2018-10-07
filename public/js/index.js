@@ -29,7 +29,7 @@ $(document).ready(function () {
         $("#contactMe").fadeIn("slow").removeClass("hidden");
     })
 
-    $('.modal').modal();
-    $('.modal').open()
+    // $('.modal').modal();
+    // $('.modal').open()
 
 });

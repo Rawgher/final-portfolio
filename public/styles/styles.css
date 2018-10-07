@@ -1,5 +1,6 @@
 body {
-  background-color: #1e3d5a;
+  background-color: #051c3b;
+  
   font-family: 'Roboto', sans-serif;
 } 
 
@@ -23,6 +24,7 @@ body {
 
 .mainContent {
   background-color: #e5efee;
+  border: 0.1em solid #80a4be;
   border-radius: 1em;
   padding-right: 1.25em;
   padding-left: 1.25em;
@@ -33,7 +35,12 @@ body {
 
 .marTop {
   margin-top: 20px;
+  margin-bottom: 30px;
 }
+
+/* .marBot {
+  margin-bottom: 30px;
+} */
 
 .navBar {
   padding-top: 60px;
@@ -95,6 +102,14 @@ font-size: 16px;
   color: black;
 }
 
+.btn {
+  background-color: #1e3d5a;
+}
+
+.btn:hover {
+  background-color: #1e3d5a;
+}
+
 .noLeftPad {
   padding-left: 0px !important;
   margin-top: 1em;
@@ -106,4 +121,5 @@ font-size: 16px;
 
 .footerSpacing {
   padding-top: 60px;
+  padding-bottom: 15px;
 }
