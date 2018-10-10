@@ -1,6 +1,5 @@
-require("dotenv").config();
+require("dotenv");
 const db = require("../models");
-const keys = require("../public/js/keys.js");
 const path = require("path");
 const nodemailer = require("nodemailer");
 const smtpTransport = require('nodemailer-smtp-transport');
@@ -16,8 +15,8 @@ module.exports = function (app) {
   let transporter = nodemailer.createTransport(smtpTransport({
     service: "Gmail",
     auth: {
-      user: keys.gmail.Gmail_Email,
-      pass: keys.gmail.Gmail_Password
+      user: process.env.Gmail_Email,
+      pass: process.env.Gmail_Password
     }
   }));
 
@@ -27,7 +26,7 @@ module.exports = function (app) {
     // setting up mail object
     let mailOptions = {
       from: req.body.email,
-      to: keys.gmail.Gmail_Email,
+      to: process.env.Gmail_Email,
       subject: "Portfolio: " + req.body.subject,
       text: req.body.textInput,
       replyTo: req.body.email
