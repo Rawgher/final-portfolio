@@ -48,11 +48,15 @@ module.exports = function (app) {
         subject: req.body.subject,
         question: req.body.textInput
       }).then(function () {
-        console.log("is this happening?");
-        res.redirect("/");
+        res.redirect("/thanks");
       });
     });
 
+
+  app.get("/thanks", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/thankYou.html"));
+  });
+  
   // setting up 404 page to catch any incorrect routes the user inputs
   app.get("*", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/404.html"));

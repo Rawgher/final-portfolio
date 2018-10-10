@@ -144,6 +144,14 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label {
   padding-bottom: 15px;
 }
 
+.thanks {
+  margin-top: 140px;
+}
+
+.blackText {
+  color: black;
+}
+
 @media screen and (max-width: 1024px) {
  
   #photoDiv {
